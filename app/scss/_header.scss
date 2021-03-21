@@ -1,0 +1,50 @@
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;		
+	
+	& a {
+		font: 400 16px/30px montserrat;
+		color: $white;	
+		display: inline-block;
+	}
+	
+	&__logo {
+		padding: 37px 90px 37px 150px;
+	}
+	
+	&__list {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		padding: 45px 0;
+	}
+	
+	&__list li {
+		padding-right: 25px;
+	}
+	
+	&__phone {
+		padding: 45px 0;
+		position: relative;
+	}
+	
+	&__phone img {
+		position: absolute;
+		top: 52px;
+		left: 72px; 
+	}
+	
+	&__phone a {
+		padding-left: 102px;
+	}
+	
+}	

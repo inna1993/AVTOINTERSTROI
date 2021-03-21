@@ -1,0 +1,32 @@
+.intro {
+	
+	& .row {
+		position: relative;
+		background-color: #222E3F;
+		background-image: url(../images/dest/background_1.png);
+		background-repeat: no-repeat;
+		background-blend-mode: soft-light;
+		min-height: 900px;
+	
+	}
+	
+	&__col--50 {
+		max-height: 900px;	
+	}
+	
+	& .background {
+		position: absolute;
+		min-height: 928px;
+		right: 0;
+		z-index: 10;
+	}
+	
+	& .main {
+		position: absolute;
+		right: 17px;
+		top: 134px;
+		z-index: 20;
+	}
+}
+	
+	
