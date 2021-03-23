@@ -11,9 +11,11 @@
 		background-repeat: no-repeat;
 		background-blend-mode: soft-light;
 		min-height: 900px;
+		display: flex;
+		flex-flow: row nowrap;
 	}
 	
-	&__col--50:last-child {
+	& .col--50 img:first-child {
 		position: absolute;
 		min-height: 928px;
 		right: 0;
@@ -27,6 +29,22 @@
 		z-index: 20;
 	}	
 	
+	& .main-title {
+		display: inline-block;
+		margin: 300px 0 0 148px;
+		text-align: left;
+		position: relative;
+	}
+	
+	& .main-title:before {
+		position: absolute;
+		content: '';
+		width: 5px;
+		height: 152px;
+		top: 5px;
+		left: -23px;
+		background-color: #23529A;
+	}
 }
 	
 	
