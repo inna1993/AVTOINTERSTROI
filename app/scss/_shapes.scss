@@ -1,0 +1,85 @@
+.diamond {
+	display: block;
+	height: 29px;
+	width: 29px;	
+	position: absolute;
+	top: 10px;
+	left: 146px;
+	
+		&__lines {
+			position: relative;
+		}
+		
+		& .diamond--rotate45 {
+			position: absolute;
+			top: 0;
+			left: 19px;
+			width: 100%;
+			height: 1px;
+			background: #3277DF;
+			transform: rotate(45deg);
+		}
+		
+		& .diamond--rotate-45 {
+			position: absolute;
+			top: 0;
+			left: -1px;
+			width: 100%;
+			height: 1px;
+			background: #3277DF;
+			transform: rotate(-45deg);
+		}
+		
+		& .diamond--rotate135 {
+			position: absolute;
+			top: 20px;
+			left: 19px;
+			width: 100%;
+			height: 1px;
+			background: #3277DF;
+			transform: rotate(135deg);
+		}
+		
+		& .diamond--rotate-135 {
+			position: absolute;
+			top: 20px;
+			left: -1px;
+			width: 100%;
+			height: 1px;
+			background: #3277DF;
+			transform: rotate(-135deg);
+		}
+}
+
+.cross {
+	display: block;
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top: 20px;
+	left: 143px;
+	
+	&__lines {
+		position: relative
+	}
+	
+	& .cross--rotate45 {
+		position: absolute;
+		top: 0;
+		left: 19px;
+		width: 100%;			
+		height: 1px;
+		background: $white;
+		transform: rotate(45deg);
+	}
+	
+	& .cross--rotate-45 {
+		position: absolute;
+		top: 0;
+		left: 19px;
+		width: 100%;			
+		height: 1px;
+		background: $white;
+		transform: rotate(-45deg);
+	}
+}
