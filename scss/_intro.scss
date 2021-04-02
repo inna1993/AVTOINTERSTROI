@@ -1,11 +1,11 @@
 .intro {
 	
-	& .container {
+	.container {
 		min-height: 928px;
 		position: relative;
 	}
 	
-	& .row {
+	.row {
 		background-color: #222E3F;
 		background-image: url(../images/dest/background_1.png);
 		background-repeat: no-repeat;
@@ -15,28 +15,28 @@
 		flex-flow: row nowrap;
 	}
 	
-	& .col--50 img:first-child {
+	.col--50 img:first-child {
 		position: absolute;
 		min-height: 928px;
 		right: 0;
 		z-index: 10;
 	}
 	
-	& .background_2 {
+	.background_2 {
 		position: absolute;
 		right: 17px;
 		top: 134px;
 		z-index: 20;
 	}	
 	
-	& .main-title {
+	.main-title {
 		display: inline-block;
 		margin: 300px 0 0 148px;
 		text-align: left;
 		position: relative;
 	}
 	
-	& .main-title:before {
+	.main-title:before {
 		position: absolute;
 		content: '';
 		width: 5px;
@@ -44,6 +44,43 @@
 		top: 5px;
 		left: -23px;
 		background-color: #23529A;
+	}
+	
+	.perks {
+		font: 400 14px/24px montserrat;
+		color: $white;
+		max-height: 165px;
+		max-width: 427px;
+		text-align: left;
+		margin-top: 31px;
+		
+		&__line {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			max-height: 41px;
+			margin-bottom: 22px;
+		}
+		
+		.diamond-cross {
+			position: relative;
+		}	
+			
+		&__line:first-child {
+			
+			& .diamond {
+				top: 0;
+			}
+			
+			& .cross {
+				top: 10px;
+			}
+		}
+		
+		
+		&__text {
+			margin-left: 207px;
+		}
 	}
 }
 	
