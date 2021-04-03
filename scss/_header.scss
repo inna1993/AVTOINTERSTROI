@@ -19,6 +19,10 @@
 	
 	&__logo {
 		padding: 37px 90px 37px 150px;
+		
+		@include screen(1320) {
+			padding: 37px 60px 37px 100px;
+		}
 	}
 	
 	&__list {
@@ -30,6 +34,10 @@
 	
 	&__list li {
 		padding-right: 25px;
+		
+		@include screen(1320) {
+			padding-right: 20px;
+		}
 	}
 	
 	&__phone {
