@@ -26,16 +26,22 @@
 		right: 0;
 		z-index: 10;
 		
-		@include screen(1200) {
+		@include screen(1320) {
 			max-width: 50%;
 		}
 	}
 	
+	
 	.col--50 img:last-child {
 
-		@include screen(1200) {
+		@include screen(1320) {
+			right: -80px;
+		}
+		
+		@include screen(1025) {
 			opacity: 0.5;
 		}
+		
 	} 
 	
 	.background_2 {
