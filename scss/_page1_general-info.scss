@@ -1,0 +1,24 @@
+.general_info {
+	
+	.row {
+		padding: 179px 64px 70px 110px;
+	}
+	
+	.col--50 {
+		position: relative;
+		
+		.frame:before {
+			min-width: 389px;
+			min-height: 537px;
+			top: 30px;
+			left: 0;
+		}
+		
+		&:first-child img:first-child {
+			margin: 0 0 95px 40px;
+			position: relative;
+			z-index: 20;
+		
+		}
+	}	
+}

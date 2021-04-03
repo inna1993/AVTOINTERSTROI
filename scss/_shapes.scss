@@ -79,3 +79,10 @@
 		transform: rotate(-45deg);
 	}
 }
+
+.frame:before {
+		content: '';
+		border: 10px $light_blue solid;
+		position: absolute;
+		z-index: 10;
+}
