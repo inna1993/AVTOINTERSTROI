@@ -2,7 +2,6 @@
 	
 	.container {
 		min-height: 928px;
-		position: relative;
 	}
 	
 	.row {
@@ -13,14 +12,31 @@
 		min-height: 900px;
 		display: flex;
 		flex-flow: row nowrap;
+		position: relative;
+		
+		
+		@include screen(1025) {
+			background-image: none;
+		}
 	}
 	
 	.col--50 img:first-child {
 		position: absolute;
-		min-height: 928px;
+		min-height: calc(100% + 28px);
 		right: 0;
 		z-index: 10;
+		
+		@include screen(1200) {
+			max-width: 50%;
+		}
 	}
+	
+	.col--50 img:last-child {
+
+		@include screen(1200) {
+			opacity: 0.5;
+		}
+	} 
 	
 	.background_2 {
 		position: absolute;
@@ -34,6 +50,11 @@
 		margin: 300px 0 0 148px;
 		text-align: left;
 		position: relative;
+		z-index: 30;
+		
+		@include screen(1200) {
+			margin-left: 100px;
+		}
 	}
 	
 	.main-title:before {
@@ -44,6 +65,10 @@
 		top: 5px;
 		left: -23px;
 		background-color: #23529A;
+		
+		@include screen(1200) {
+			height: 100%;
+		}
 	}
 	
 	.perks {
@@ -53,6 +78,8 @@
 		max-width: 427px;
 		text-align: left;
 		margin-top: 31px;
+		z-index: 30;
+		position: relative;
 		
 		&__line {
 			display: flex;
@@ -60,12 +87,34 @@
 			justify-content: flex-start;
 			max-height: 41px;
 			margin-bottom: 22px;
+			
+			@include screen(1200) {
+				max-height: 100%;
+			}	
 		}
 		
 		.diamond-cross {
 			position: relative;
-		}	
+		}
+		
+		.diamond {
+			top: 10px;
+			left: 146px;
 			
+			@include screen(1200) {
+				left: 89px;
+			}
+		}
+		
+		.cross {
+			top: 20px;
+			left: 143px;
+			
+			@include screen(1200) {
+				left: 86px;
+			}
+		}
+		
 		&__line:first-child {
 			
 			& .diamond {
@@ -80,6 +129,10 @@
 		
 		&__text {
 			margin-left: 207px;
+			
+			@include screen(1200) {
+				margin-left: 150px;
+			}
 		}
 	}
 }
