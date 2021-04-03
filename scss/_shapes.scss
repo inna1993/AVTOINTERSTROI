@@ -8,7 +8,7 @@
 			position: relative;
 		}
 		
-		& .diamond--rotate45 {
+		&--rotate45 {
 			position: absolute;
 			top: 0;
 			left: 19px;
@@ -18,7 +18,7 @@
 			transform: rotate(45deg);
 		}
 		
-		& .diamond--rotate-45 {
+		&--rotate-45 {
 			position: absolute;
 			top: 0;
 			left: -1px;
@@ -28,7 +28,7 @@
 			transform: rotate(-45deg);
 		}
 		
-		& .diamond--rotate135 {
+		&--rotate135 {
 			position: absolute;
 			top: 20px;
 			left: 19px;
@@ -38,7 +38,7 @@
 			transform: rotate(135deg);
 		}
 		
-		& .diamond--rotate-135 {
+		&--rotate-135 {
 			position: absolute;
 			top: 20px;
 			left: -1px;
@@ -59,7 +59,7 @@
 		position: relative
 	}
 	
-	& .cross--rotate45 {
+	&--rotate45 {
 		position: absolute;
 		top: 0;
 		left: 19px;
@@ -69,7 +69,7 @@
 		transform: rotate(45deg);
 	}
 	
-	& .cross--rotate-45 {
+	&--rotate-45 {
 		position: absolute;
 		top: 0;
 		left: 19px;
